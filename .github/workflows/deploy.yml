@@ -35,11 +35,11 @@ jobs:
       - name: Tag image
         run: |
           docker tag $ECR_REPOSITORY:latest \
-          ${{ secrets.ECR_URI }}:latest
+          ${{ env.ECR_URI }}:latest
 
       - name: Push image to ECR
         run: |
-          docker push ${{ secrets.ECR_URI }}:latest
+          docker push ${{ env.ECR_URI }}:latest
 
       - name: Deploy
         run: |          
