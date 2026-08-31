@@ -1,0 +1,12 @@
+flask
+gunicorn
+requests
+
+flask
+gunicorn
+werkzeug
+Flask
+Flask-SQLAlchemy
+psycopg2-binary
+boto3
+gunicorn
